@@ -30,6 +30,22 @@ header.Classe_Div_Header {
     column-gap: 20px;
 }
 
+@media (max-width: 991.98px){
+    header.Classe_Div_Header
+    {
+        grid-template-columns: 10px 1fr 1fr 1fr 1fr 1fr 10px ;
+	    grid-template-areas:
+		" . logo shops social-networks brands langages ." 
+		" . logo search-bar search-bar search-bar actions . " 
+		" navbar navbar navbar navbar navbar navbar navbar ";
+    }
+
+    .Classe_Div_Header_Menu nav.menu
+    {
+        grid-column-start: 1;
+        grid-column-end:7;
+    }
+}
 
 .Classe_Div_Header_Container {
 	width: 100%;
@@ -152,6 +168,7 @@ header.Classe_Div_Header i.fab
 	list-style: none;
 	justify-content: space-between;
 	padding-left: 0;
+    align-items: center;
 }
 
 
@@ -236,13 +253,13 @@ text-align:right;
 
 }
 
-.Nav_Menu_Header_Réduit {
+/* .Nav_Menu_Header_Réduit {
 }
 
 
 
 #Menu {
-}
+} */
 
 
 
