@@ -211,7 +211,7 @@ li.Classe_Li_Header_Panier
 		grid-template-rows: repeat(2, auto);
 	    grid-template-areas:
 		" . navbar logo actions ." 
-		" . search-bar search-bar search-bar . ";
+		" search-bar search-bar search-bar search-bar search-bar ";
     }
 
 	/* Temporaire, en attendant de trouver comment faire un burger menu  */
@@ -238,6 +238,22 @@ li.Classe_Li_Header_Panier
 	.Classe_Div_Header_Actions > ul li
 	{
 		padding: 5px;
+	}
+
+	.Classe_Div_Header_Recherche
+	{
+		background-color: orange;
+		
+	}
+
+	.Classe_Div_Header_Recherche form 
+	{
+		margin:20px 10px;
+	}
+
+	.Classe_Div_Header_Recherche button
+	{
+		right: 30px;
 	}
 	
 }
