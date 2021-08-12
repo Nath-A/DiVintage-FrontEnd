@@ -1,0 +1,255 @@
+/*--------PARCE QUE J'AI PAS TOUS LES FICHIERS-------------------------------*/
+body
+{
+    font-family: Nunito, sans-serif;
+}
+
+/* div#Div_Logo img
+{
+    border-radius: 100%;
+} */
+/*------------------------------GENERAL-------------------------------*/
+header.Classe_Div_Header {
+	width: 100%;
+	display: grid;
+	/*grid-template-columns: 1fr;*/
+	grid-template-rows: repeat(3, auto);
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-areas:
+		" . logo shops social-networks brands langages . " 
+		" . logo search-bar search-bar search-bar actions . " 
+		" . logo navbar navbar navbar navbar . ";
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+
+.Classe_Div_Header_Container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	/*display: grid;*/
+	/*grid-template-columns: repeat(5,1fr);*/
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+header.Classe_Div_Header i.fab
+{
+	font-size:25px;
+	color:#000000;
+}
+/*------------------------------PLACEMEMENT-------------------------------*/
+
+#Div_Logo
+{
+	grid-area:logo;
+}
+
+.Classe_Div_Header_Reseaux_sociaux {
+	grid-area: social-networks;
+}
+
+.Classe_Div_Header_Magasins {
+	grid-area: shops;
+}
+
+.Classe_Div_Header_Marques {
+	grid-area: brands;
+}
+
+.Classe_Div_Header_Choix_Langue {
+	grid-area: langages;
+}
+
+.Classe_Div_Header_Recherche {
+	grid-area: search-bar;
+}
+
+.Classe_Div_Header_Actions
+{
+	grid-area:actions;
+}
+
+nav.menu
+{
+	grid-area:navbar;
+}
+/*------------------------------HEADER HAUT-------------------------------*/
+.Classe_Div_Header_Haut {
+	color: orange;
+}
+
+/*.Classe_Div_Header_Haut .Classe_Div_Header_Container 
+{
+	
+}*/
+#Div_Logo {
+	/*	grid-row-start: 1;
+	grid-row-end: 4;*/
+	/*grid-area: logo;*/
+	align-self: center;
+	grid-row: 1 / span 3;
+}
+
+.Classe_Div_Header_Reseaux_sociaux ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+	padding-left:0;
+}
+
+
+
+/*------------------------------HEADER MILIEU-------------------------------*/
+
+
+
+
+.Classe_Div_Header_Recherche 
+{
+	/*grid-column: 2 / span 3;*/
+}
+
+
+
+
+
+
+.Classe_Div_Header_Actions ul 
+{
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+	padding-left: 0;
+}
+
+
+li.Classe_Li_Header_Panier
+{
+	display:flex;
+	flex-direction:column;
+}
+
+/*------------------------------HEADER BAS-------------------------------*/
+
+.Nav_Menu 
+{
+	background-color: orange;
+	color:#ffffff;
+}
+
+.Classe_Div_Header_Bas nav 
+{
+	/*grid-column: 2 / span 4;*/
+}
+
+
+/*-------------------------------OLD STUFF-------------------------------*/
+.Classe_Div_Logo {
+	/* box-shadow: white, 10px, 10px; */
+	height: 185px;
+	width: 185px;
+	background-image: url('https://placekitten.com/187/185');
+	/* background-position: top; */
+	background-repeat: no-repeat;
+	/* background-size: contain; */
+	cursor: pointer;
+	transition: 0.3s;
+	/* margin-bottom: 20px; */
+	z-index: 1000;
+    border-radius: 100%;
+}
+
+.Classe_Div_Header_Droite{
+width: calc(100% - 170px);
+
+
+
+}
+
+
+.Classe_Div_Header_Droite_Haut{
+	height:40px;
+	width:100%;
+
+
+
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:flex-end;
+
+text-align:right;
+
+}
+
+.Classe_Div_Header_Droite_Bas {
+	height: 40px;
+	width: 100%;
+
+	display: flex;
+	flex-flow: row wrap;
+}
+
+
+
+
+/* // Old */
+.Nav_Menu {
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+
+}
+
+.Nav_Menu_Header_Réduit {
+}
+
+
+
+#Menu {
+}
+
+
+
+.Classe_Div_Logo_Header_Réduit {
+	height: 60px;
+	margin-bottom: 5px;
+	width: 200px;
+	margin-left: 0px;
+}
+
+
+ul#Menu {
+	list-style-type: none;
+	font-family: 'Oswald', sans-serif;
+	font-size: 15pt;
+	letter-spacing: 2px;
+}
+
+ul#Menu li {
+	display: inline;
+	color: black;
+	padding: 30px;
+}
+
+ul#Menu li:hover {
+	color: #fe6145;
+	cursor: pointer;
+}
+
+
+nav.menu, nav.menu > ul
+{
+    padding:0;
+}
+
+nav.menu ul {
+    display: flex;
+    flex-direction:row;
+    list-style: none;
+    justify-content: space-between;
+}

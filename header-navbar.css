@@ -1,17 +1,33 @@
+/*--------PARCE QUE J'AI PAS TOUS LES FICHIERS-------------------------------*/
+body
+{
+    font-family: Nunito, sans-serif;
+    margin:0;
+}
+
+/* div#Div_Logo img
+{
+    border-radius: 100%;
+} */
 /*------------------------------GENERAL-------------------------------*/
+header
+{
+    margin-top: 10px;
+}
 header.Classe_Div_Header {
 	width: 100%;
 	display: grid;
 	/*grid-template-columns: 1fr;*/
 	grid-template-rows: repeat(3, auto);
-	grid-template-columns: repeat(7, 1fr);
+	grid-template-columns: repeat(7, 1fr) ;
 	grid-template-areas:
 		" . logo shops social-networks brands langages . " 
 		" . logo search-bar search-bar search-bar actions . " 
-		" . logo navbar navbar navbar navbar . ";
+		" navbar navbar navbar navbar navbar navbar navbar ";
 	justify-content: center;
 	text-align: center;
 	align-items: center;
+    column-gap: 20px;
 }
 
 
@@ -38,23 +54,28 @@ header.Classe_Div_Header i.fab
 	grid-area:logo;
 }
 
-.Classe_Div_Header_Reseaux_sociaux {
+.Classe_Div_Header_Reseaux_sociaux 
+{
 	grid-area: social-networks;
 }
 
-.Classe_Div_Header_Magasins {
+.Classe_Div_Header_Magasins 
+{
 	grid-area: shops;
 }
 
-.Classe_Div_Header_Marques {
+.Classe_Div_Header_Marques 
+{
 	grid-area: brands;
 }
 
-.Classe_Div_Header_Choix_Langue {
+.Classe_Div_Header_Choix_Langue 
+{
 	grid-area: langages;
 }
 
-.Classe_Div_Header_Recherche {
+.Classe_Div_Header_Recherche 
+{
 	grid-area: search-bar;
 }
 
@@ -63,12 +84,13 @@ header.Classe_Div_Header i.fab
 	grid-area:actions;
 }
 
-nav.menu
+.Classe_Div_Header_Menu
 {
 	grid-area:navbar;
 }
 /*------------------------------HEADER HAUT-------------------------------*/
-.Classe_Div_Header_Haut {
+.Classe_Div_Header_Magasins, .Classe_Div_Header_Marques, .Classe_Div_Header_Choix_Langue
+{
 	color: orange;
 }
 
@@ -76,15 +98,15 @@ nav.menu
 {
 	
 }*/
-#Div_Logo {
-	/*	grid-row-start: 1;
-	grid-row-end: 4;*/
-	/*grid-area: logo;*/
-	align-self: center;
+#Div_Logo 
+{
+
+	align-self: start;
 	grid-row: 1 / span 3;
 }
 
-.Classe_Div_Header_Reseaux_sociaux ul {
+.Classe_Div_Header_Reseaux_sociaux ul 
+{
 	display: flex;
 	list-style: none;
 	justify-content: space-around;
@@ -94,25 +116,41 @@ nav.menu
 
 
 /*------------------------------HEADER MILIEU-------------------------------*/
-
-
-
-
-.Classe_Div_Header_Recherche 
+.Classe_Div_Header_Recherche
 {
-	/*grid-column: 2 / span 3;*/
+    position:relative;
 }
 
+.Classe_Div_Header_Recherche input[type="search"]
+{
+	/* grid-column: 2 / span 3; */
+    width: 100%;
+    padding: 10px 45px 10px 10px ;
+    border-radius: 50px;
+    border: 2px solid black;
+}
 
+.Classe_Div_Header_Recherche button
+{
+    background-color: rgba(255, 255, 255, 0);
+    border:none;
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(0%, -50%);
+    padding:0;
+}
 
-
-
-
+.Classe_Div_Header_Recherche button i.fas
+{
+    font-size: 25px;
+}
 .Classe_Div_Header_Actions ul 
 {
 	display: flex;
 	list-style: none;
-	justify-content: space-around;
+	justify-content: space-between;
 	padding-left: 0;
 }
 
@@ -125,31 +163,35 @@ li.Classe_Li_Header_Panier
 
 /*------------------------------HEADER BAS-------------------------------*/
 
-.Classe_Div_Header_Bas 
+.Classe_Div_Header_Menu
 {
 	background-color: orange;
 	color:#ffffff;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
 }
 
-.Classe_Div_Header_Bas nav 
+.Classe_Div_Header_Menu nav.menu
 {
-	/*grid-column: 2 / span 4;*/
+	grid-column-start: 3;
+    grid-column-end: 7;
 }
 
 
 /*-------------------------------OLD STUFF-------------------------------*/
 .Classe_Div_Logo {
-	box-shadow: white, 10px, 10px;
-	height: 80px;
-	width: 185px;
-	background-image: url('/Images/Logo.png');
-	background-position: top;
+	/* box-shadow: white, 10px, 10px; */
+	height: 150px;
+	width: 150px;
+	background-image: url('https://placekitten.com/187/185');
+	/* background-position: top; */
 	background-repeat: no-repeat;
-	background-size: contain;
+	/* background-size: contain; */
 	cursor: pointer;
 	transition: 0.3s;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 	z-index: 1000;
+    border-radius: 100%;
 }
 
 .Classe_Div_Header_Droite{
