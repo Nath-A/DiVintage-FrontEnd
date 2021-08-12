@@ -9,6 +9,9 @@
 ### 12/08
 #### **Header & Navbar**
 - [x] Mettre le background color sur la navbar
-- [ ] Designer le formulaire de recherche
+- [x] Designer le formulaire de recherche
 - [ ] Rendre le Menu responsive
+  - [x] Trouver [des ressources  ASP.NET](https://ej2.syncfusion.com/aspnetcore/documentation/menu/getting-started/) pour le faire
+  - [ ] Attaquer ça -> demain
+   
 

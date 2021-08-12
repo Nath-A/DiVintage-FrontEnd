@@ -30,22 +30,7 @@ header.Classe_Div_Header {
     column-gap: 20px;
 }
 
-@media (max-width: 991.98px){
-    header.Classe_Div_Header
-    {
-        grid-template-columns: 10px 1fr 1fr 1fr 1fr 1fr 10px ;
-	    grid-template-areas:
-		" . logo shops social-networks brands langages ." 
-		" . logo search-bar search-bar search-bar actions . " 
-		" navbar navbar navbar navbar navbar navbar navbar ";
-    }
 
-    .Classe_Div_Header_Menu nav.menu
-    {
-        grid-column-start: 1;
-        grid-column-end:7;
-    }
-}
 
 .Classe_Div_Header_Container {
 	width: 100%;
@@ -165,6 +150,8 @@ header.Classe_Div_Header i.fab
 .Classe_Div_Header_Actions ul 
 {
 	display: flex;
+	flex-wrap: wrap;
+    flex-direction: row;
 	list-style: none;
 	justify-content: space-between;
 	padding-left: 0;
@@ -194,6 +181,66 @@ li.Classe_Li_Header_Panier
     grid-column-end: 7;
 }
 
+/*------------------------------RESPONSIVE-------------------------------*/
+
+
+@media (max-width: 991.98px){
+    header.Classe_Div_Header
+    {
+        grid-template-columns: 10px 1fr 1fr 1fr 1fr 1fr 10px ;
+	    grid-template-areas:
+		" . logo shops social-networks brands langages ." 
+		" . logo search-bar search-bar search-bar actions . " 
+		" navbar navbar navbar navbar navbar navbar navbar ";
+    }
+
+    .Classe_Div_Header_Menu nav.menu
+    {
+        grid-column-start: 2;
+        grid-column-end:7;
+    }
+}
+
+@media (max-width: 767.98px)
+{
+	header.Classe_Div_Header
+    {
+        column-gap: 5px;
+		row-gap: 5px;
+		grid-template-columns: 10px 1fr 1fr 1fr 10px ;
+		grid-template-rows: repeat(2, auto);
+	    grid-template-areas:
+		" . navbar logo actions ." 
+		" . search-bar search-bar search-bar . ";
+    }
+
+	/* Temporaire, en attendant de trouver comment faire un burger menu  */
+	.Classe_Div_Header_Magasins, .Classe_Div_Header_Reseaux_sociaux, .Classe_Div_Header_Marques, .Classe_Div_Header_Choix_Langue
+	{
+		display:none;
+	}
+
+	#Div_Logo 
+	{
+
+		align-self: center;
+		justify-self: center;
+		grid-row: 1 / 2;
+		height: 100px;
+		width: 100px;
+	}
+
+	.Classe_Div_Header_Actions ul 
+	{
+		justify-content: space-around;
+	}
+
+	.Classe_Div_Header_Actions > ul li
+	{
+		padding: 5px;
+	}
+	
+}
 
 /*-------------------------------OLD STUFF-------------------------------*/
 .Classe_Div_Logo {
