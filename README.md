@@ -1,3 +1,3 @@
 # DiVintage-FrontEnd
 
-[Header & Navbar](https://nathalie-anneessens.github.io/DiVintage-FrontEnd/header-navbar.html)a
+[Header & Navbar](https://nathalie-anneessens.github.io/DiVintage-FrontEnd/header-navbar.html)
