@@ -1,14 +1,16 @@
 # DiVintage-FrontEnd
 ## Dev HTML/CSS
 * [Header & Navbar](https://nathalie-anneessens.github.io/DiVintage-FrontEnd/header-navbar.html)
-
-## Maquettes
-![Catalogue page commandes](Export_Figma/../Exports_Figma/Catalogue-V1.1.jpg)
-
 ### Coming soon
 * [Home page](#)
 * [Catalogue](#)
 * [Article](#)
+
+## Maquettes
+![Catalogue page commandes](Export_Figma/../Exports_Figma/Catalogue-V1.1.jpg)
+
+
+
 ## TO DO
 ### 12/08
 #### **Header & Navbar**
