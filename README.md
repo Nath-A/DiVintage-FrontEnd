@@ -1,10 +1,14 @@
 # DiVintage-FrontEnd
-## Liens
-### WIP
+## Dev HTML/CSS
 * [Header & Navbar](https://nathalie-anneessens.github.io/DiVintage-FrontEnd/header-navbar.html)
+
+## Maquettes
+![Catalogue page commandes](Export_Figma/../Exports_Figma/Catalogue-V1.1.jpg)
+
 ### Coming soon
 * [Home page](#)
-* [Footer](#)
+* [Catalogue](#)
+* [Article](#)
 ## TO DO
 ### 12/08
 #### **Header & Navbar**
@@ -13,5 +17,10 @@
 - [ ] Rendre le Menu responsive
   - [x] Trouver [des ressources  ASP.NET](https://ej2.syncfusion.com/aspnetcore/documentation/menu/getting-started/) pour le faire
   - [ ] Attaquer ça -> demain
+### 16/08
+#### **Maquette V1.0**
+- [x] Page catalogue
+- [ ] Page article
+- [ ] 
    
 
