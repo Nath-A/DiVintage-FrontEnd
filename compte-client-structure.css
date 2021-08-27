@@ -58,14 +58,21 @@ div.Classe_Div_Compte_Client_Welcome
 
 
 
-div.Classe_Div_Compte_Client_Sommaire div:hover
+div.Classe_Div_Compte_Client_Menu_Vertical div:hover
  {
     background-color:orange;
     color:white;
  }
 
- div.Classe_Div_Compte_Client_Sommaire i
+ div.Classe_Div_Compte_Client_Menu_Vertical i
 {
     justify-self: center;
     font-size: 40px;
+}
+
+div.Classe_Div_Compte_Client_Menu_Vertical div:last-child
+{
+    text-align: center;
+    /* grid-column : 2 / span 2; */
+    grid-template-columns: 1fr;
 }
