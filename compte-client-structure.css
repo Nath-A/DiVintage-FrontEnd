@@ -1,0 +1,71 @@
+body 
+{
+    font-family: Nunito, sans-serif;
+    margin: 0;
+}
+
+div#body-content 
+{
+    margin: 0 auto;
+    max-width: 1400px;
+
+}
+
+h1 
+{
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+
+
+}
+
+h2
+{
+    text-align: center;
+}
+
+div.Classe_Div_Compte_Client_Content
+{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    column-gap: 30px;
+
+}
+
+
+
+div.Classe_Div_Compte_Client_Menu_Vertical > div
+{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    color:orange;
+    border-radius: 20px;
+    border:2px solid orange;
+    height:70px;
+    align-items: center;
+    justify-content: start;
+    font-size:24px;
+    column-gap: 5px;
+}
+
+div.Classe_Div_Compte_Client_Welcome
+{
+    display: initial;
+
+}
+
+
+
+
+div.Classe_Div_Compte_Client_Sommaire div:hover
+ {
+    background-color:orange;
+    color:white;
+ }
+
+ div.Classe_Div_Compte_Client_Sommaire i
+{
+    justify-self: center;
+    font-size: 40px;
+}
