@@ -68,6 +68,7 @@ div.Classe_Div_Compte_Client_Sommaire div:hover
      /* text-align: center; */
      /* align-self: center; */
      /* grid-template-columns: 1fr; */
+     margin-top: 20px;
  }
 
 div.Classe_Div_Compte_Client_Sommaire i
@@ -85,7 +86,7 @@ div.Classe_Div_Compte_Client_Sommaire i
     }
     div.Classe_Div_Compte_Client_Sommaire div:last-child
     {
-        grid-column:span 2;
+        grid-column: 2;
     }
 }
 
@@ -99,7 +100,7 @@ div.Classe_Div_Compte_Client_Sommaire i
     div.Classe_Div_Compte_Client_Sommaire div:last-child
     {
         grid-column:1;
-        margin-top: 10px;
+        /* margin-top: 10px; */
     }
 }
 
