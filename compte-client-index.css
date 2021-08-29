@@ -64,10 +64,10 @@ div.Classe_Div_Compte_Client_Sommaire div:hover
 
  div.Classe_Div_Compte_Client_Sommaire div:last-child
  {
-     grid-column : 2 / span 2;
-     text-align: center;
+     grid-column : 4 / span 1;
+     /* text-align: center; */
      /* align-self: center; */
-     grid-template-columns: 1fr;
+     /* grid-template-columns: 1fr; */
  }
 
 div.Classe_Div_Compte_Client_Sommaire i
