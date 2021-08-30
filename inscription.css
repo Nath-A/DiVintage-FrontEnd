@@ -11,3 +11,30 @@ div#body-content
 
 }
 
+h1, .Classe_Div_Inscription_Content
+{
+    text-align: center;
+}
+
+input
+{
+    border-radius: 20px;
+    padding:5px;
+}
+.Classe_Div_Inscription_Email_Reset
+{
+    border-radius: 20px;
+    border: 1px solid gray;
+    background-color: lightgrey;
+    color:#000000;
+    padding: 10px;    
+}
+
+.Classe_Div_Inscription_Email_Submit
+{
+    background-color: orange;
+    border-radius: 20px;
+    border: 1px solid orange;
+    padding: 10px;
+    font-weight: 600;    
+}
