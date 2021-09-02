@@ -38,3 +38,13 @@ input
     padding: 10px;
     font-weight: 600;    
 }
+.Classe_Div_Inscription_Content_Formulaire_Boutons
+{
+    display: flex;
+    justify-content: space-around;
+}
+form button
+{
+    cursor:pointer;
+    
+}
