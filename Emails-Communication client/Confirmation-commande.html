@@ -48,7 +48,8 @@
             max-width:1400px;
             margin:0 auto;
             font-size: 0.5rem;
-            line-height: 150%;;
+            line-height: 150%;
+            padding : 25px;
         }
 
         a
@@ -56,6 +57,16 @@
             color:black;
             text-decoration: underline;
             font-weight: 600;
+        }
+
+        ul, .Article
+        {
+            display:flex;
+            /* justify-content: space-between; */
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+            text-align:center;
         }
     </style>
 
@@ -77,6 +88,64 @@
             
             <div class="Commande">
                 <h2>Détails de la commande</h2>
+                <!-- <table>
+                    <thead>
+                        <tr>
+                            <th>Photo</th>
+                            <th>Article</th>
+                            <th>Taille</th>
+                            <th>Prix</th>
+                            <th>Disponibilité</th>
+                        </tr>
+                            
+                    </thead>
+                </table> -->
+                        <ul>
+                            <li>Photo</li>
+                            <li>Article</li>
+                            <li>Taille</li>
+                            <li>Prix</li>
+                            <li>Disponibilité</li>
+                        </ul>
+                        <div class="Article">
+                            <img src="https://placekitten.com/96/139" alt="Photo Article">
+                            <p>Principal<br/>Sunlight</p>
+                            <p>EU 38</p>
+                            <p>€12,00</p>
+                            <p>Sur commande</p>
+                        </div>
+                        <div class="Article">
+                            <img src="https://placekitten.com/96/139" alt="Photo Article">
+                            <p>Principal<br/>Sunlight</p>
+                            <p>EU 38</p>
+                            <p>€12,00</p>
+                            <p>Sur commande</p>
+                        </div>
+                        <div class="Article">
+                            <img src="https://placekitten.com/96/139" alt="Photo Article">
+                            <p>Principal<br/>Sunlight</p>
+                            <p>EU 38</p>
+                            <p>€12,00</p>
+                            <p>Sur commande</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <div class="Livraison">
+                                <p><strong>Adresse de livraison</strong></p>
+                                <p>Jane Doe<br/>
+                                Rue des Chats, 666/8<br/>
+                                6666 MiaouCity<br/>
+                                Belgique</p>
+                                <p>+32466 12 45 78<br/>
+                                janedoe@mail.com</p>
+                                    
+                                    
+                            </div>
+                            <div class="Paiement">
+                                
+                            </div>
+
+                        </div>
 
             </div>
             </main>
