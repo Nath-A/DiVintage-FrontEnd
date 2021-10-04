@@ -20,7 +20,7 @@
 
         main
         {
-            max-width:1400px;
+            max-width:1200px;
             margin:0 auto;
             background-color: #fff;
             padding:30px;
@@ -49,7 +49,7 @@
         footer
         {
             text-align: justify;
-            max-width:1400px;
+            max-width:1200px;
             margin:0 auto;
             font-size: 0.5rem;
             line-height: 150%;
@@ -85,11 +85,34 @@
         .Livraison-paiement
         {
             display:flex;
+            justify-content: space-between;
         }
 
+        .Livraison p
+        {
+            margin: 20px 0;
+        }
+        .Paiement div
+        {
+            display:flex;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+            margin:25px 0;
+            
+        }
+
+        .Paiement p:first-child
+        {
+            margin-right:20px;
+        }
+
+        .Paiement div p:last-child
+        {
+            margin-left:20px;
+        }
         .contact
         {
-            margin-top: 25px;;
+            margin-top: 25px;
             font-size: 0.8rem;
         }
 
@@ -142,33 +165,33 @@
                             
                     </thead>
                 </table> -->
-                <ul>
+                <!-- <ul>
                     <li>Photo</li>
                     <li>Article</li>
                     <li>Taille</li>
                     <li>Prix</li>
                     <li>Disponibilité</li>
-                </ul>
+                </ul> -->
                 <div class="Article">
-                    <img src="https://placekitten.com/96/139" alt="Photo Article">
+                    <img src="https://placekitten.com/133/200" alt="Photo Article" width="133" height="200">
                     <p>Principal<br />Sunlight</p>
                     <p>EU 38</p>
                     <p>€12,00</p>
+                    <p>En stock</p>
+                </div>
+                <div class="Article">
+                    <img src="https://placekitten.com/266/400" alt="Photo Article" width="133" height="200">
+                    <p>Principal<br />Sunlight</p>
+                    <p>EU 38</p>
+                    <p>€120,00</p>
                     <p>Sur commande</p>
                 </div>
                 <div class="Article">
-                    <img src="https://placekitten.com/96/139" alt="Photo Article">
+                    <img src="https://placekitten.com/399/600" alt="Photo Article" width="133" height="200">
                     <p>Principal<br />Sunlight</p>
-                    <p>EU 38</p>
+                    <p>/</p>
                     <p>€12,00</p>
-                    <p>Sur commande</p>
-                </div>
-                <div class="Article">
-                    <img src="https://placekitten.com/96/139" alt="Photo Article">
-                    <p>Principal<br />Sunlight</p>
-                    <p>EU 38</p>
-                    <p>€12,00</p>
-                    <p>Sur commande</p>
+                    <p>En stock/p>
                 </div>
                 <hr>
                 <div class="Livraison-paiement">
@@ -184,6 +207,23 @@
 
                     </div>
                     <div class="Paiement">
+                        <div class="Sous-total">
+                            <p>Sous-total</p>
+                            <p>€ 235</p>
+                        </div>
+                        <div class="Expédition">
+                            <p>Expédition</p>
+                            <p>€ 7.99 via DPD</p>
+                        </div>
+                        <div class="Moyen-paiement">
+                            <p>Moyen de paiement</p>
+                            <p>Paypal</p>
+                        </div>
+                        
+                        <div class="Total">
+                            <p>Total</p>
+                            <p>€ XXX,XX</p>
+                        </div>
 
                     </div>
 
