@@ -14,7 +14,7 @@
         header img 
         {
             display: block;
-            margin: 0 auto;
+            margin: 15px auto;
             border-radius: 100%;
         }
 
@@ -23,6 +23,8 @@
             max-width:1400px;
             margin:0 auto;
             background-color: #fff;
+            padding:30px;
+            border-radius:50px
         }
 
         div.container 
@@ -40,6 +42,8 @@
         {
             
             color:#fff;
+            margin:0;
+            padding:50px 0;
         }
 
         footer
@@ -62,11 +66,45 @@
         ul, .Article
         {
             display:flex;
-            /* justify-content: space-between; */
-            justify-content: space-around;
+            justify-content: space-between;
+            /* justify-content: space-around; */
             list-style: none;
             padding: 0;
             text-align:center;
+        }
+        .Article
+        {
+            margin-bottom: 30px;
+        }
+
+        p
+        {
+            margin:0;
+        }
+
+        .Livraison-paiement
+        {
+            display:flex;
+        }
+
+        .contact
+        {
+            margin-top: 25px;;
+            font-size: 0.8rem;
+        }
+
+        .contact div 
+        {
+            display: flex;
+            justify-content: space-between;
+            margin:5px 0;
+            align-items: center;
+        }
+
+        .contact i 
+        {
+            font-size:1.5rem;
+            margin:5px;
         }
     </style>
 
@@ -82,10 +120,14 @@
 
             </div>
             <p>Bonjour PRENOM NOM,</p>
-            <p>Bonne nouvelle : votre commande n° <a href="#">xxxxxxx</a> du 22/09/2021 a bien été validée et est maintenant en cours de préparation. Vous pouvez vérifier son statut directement via <a href="#">ce lien</a>.</p>
-            <p> Vous recevrez un email de confirmation lorsque celle-ci sera expédiée, avec un lien vous permettant de suivre votre colis.<br/>
-            Vous avez choisi le mode de livraison suivant : <strong>livraison standard à domicile / retrait à la boutique de Bruxelles.</strong></p>
-            
+            <p>Bonne nouvelle : votre commande n° <a href="#">xxxxxxx</a> du 22/09/2021 a bien été validée et est
+                maintenant en cours de préparation. Vous pouvez vérifier son statut directement via <a href="#">ce
+                    lien</a>.</p>
+            <p> Vous recevrez un email de confirmation lorsque celle-ci sera expédiée, avec un lien vous permettant de
+                suivre votre colis.<br />
+                Vous avez choisi le mode de livraison suivant : <strong>livraison standard à domicile / retrait à la
+                    boutique de Bruxelles.</strong></p>
+
             <div class="Commande">
                 <h2>Détails de la commande</h2>
                 <!-- <table>
@@ -100,55 +142,80 @@
                             
                     </thead>
                 </table> -->
-                        <ul>
-                            <li>Photo</li>
-                            <li>Article</li>
-                            <li>Taille</li>
-                            <li>Prix</li>
-                            <li>Disponibilité</li>
-                        </ul>
-                        <div class="Article">
-                            <img src="https://placekitten.com/96/139" alt="Photo Article">
-                            <p>Principal<br/>Sunlight</p>
-                            <p>EU 38</p>
-                            <p>€12,00</p>
-                            <p>Sur commande</p>
-                        </div>
-                        <div class="Article">
-                            <img src="https://placekitten.com/96/139" alt="Photo Article">
-                            <p>Principal<br/>Sunlight</p>
-                            <p>EU 38</p>
-                            <p>€12,00</p>
-                            <p>Sur commande</p>
-                        </div>
-                        <div class="Article">
-                            <img src="https://placekitten.com/96/139" alt="Photo Article">
-                            <p>Principal<br/>Sunlight</p>
-                            <p>EU 38</p>
-                            <p>€12,00</p>
-                            <p>Sur commande</p>
-                        </div>
-                        <hr>
-                        <div>
-                            <div class="Livraison">
-                                <p><strong>Adresse de livraison</strong></p>
-                                <p>Jane Doe<br/>
-                                Rue des Chats, 666/8<br/>
-                                6666 MiaouCity<br/>
-                                Belgique</p>
-                                <p>+32466 12 45 78<br/>
-                                janedoe@mail.com</p>
-                                    
-                                    
-                            </div>
-                            <div class="Paiement">
-                                
-                            </div>
+                <ul>
+                    <li>Photo</li>
+                    <li>Article</li>
+                    <li>Taille</li>
+                    <li>Prix</li>
+                    <li>Disponibilité</li>
+                </ul>
+                <div class="Article">
+                    <img src="https://placekitten.com/96/139" alt="Photo Article">
+                    <p>Principal<br />Sunlight</p>
+                    <p>EU 38</p>
+                    <p>€12,00</p>
+                    <p>Sur commande</p>
+                </div>
+                <div class="Article">
+                    <img src="https://placekitten.com/96/139" alt="Photo Article">
+                    <p>Principal<br />Sunlight</p>
+                    <p>EU 38</p>
+                    <p>€12,00</p>
+                    <p>Sur commande</p>
+                </div>
+                <div class="Article">
+                    <img src="https://placekitten.com/96/139" alt="Photo Article">
+                    <p>Principal<br />Sunlight</p>
+                    <p>EU 38</p>
+                    <p>€12,00</p>
+                    <p>Sur commande</p>
+                </div>
+                <hr>
+                <div class="Livraison-paiement">
+                    <div class="Livraison">
+                        <p><strong>Adresse de livraison</strong></p>
+                        <p>Jane Doe<br />
+                            Rue des Chats, 666/8<br />
+                            6666 MiaouCity<br />
+                            Belgique</p>
+                        <p>+32466 12 45 78<br />
+                            janedoe@mail.com</p>
 
-                        </div>
+
+                    </div>
+                    <div class="Paiement">
+
+                    </div>
+
+                </div>
+
+
 
             </div>
-            </main>
+            <hr>
+            <p>Si vous avez la moindre question au sujet de votre commande, n’hésitez pas à répondre directement à cet
+                email. </p>
+
+            <p>À bientôt, </p>
+
+            <p>L’équipe DiVintage</p>
+            <div class="contact">
+                <div>
+                    <p>Rue de la Grande Ile 8, 1000 Bruxelles</p>
+                    <p><a href="tel:+32485537175">+32(0)485 53 71 75</a></p>
+                </div>
+                <div>
+                    <p><a href="https://divintage.com">https://divintage.com</a></p>
+                    <p><a href="mailto:info@divintage.com">info@divintage.com</a></p>
+                    <p>
+                        <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    </p>
+
+                </div>
+            </div>
+
+        </main>
 
         <footer>
             article cat pet nation sit crew equator wear seldom slept information around bone memory yes loud case rise writing buffalo price must door minerals.Row difference softly exercise tent substance two property hurt mighty felt explanation lay automobile begun chapter burst brave test do neighbor tower throw giving. care physical swimming recently rather through rocky porch experiment think game proud feel period at treated solution familiar college quarter quickly recall away sense. golden sink else oxygen depend inside naturally yet exciting aboard slabs herd worry bag actual wooden solid orange central soil plenty reason declared refer. blind contrast tales sometime passage tears was compare hand beside pure successful cloud frame forget few rubbed entire month tonight than buffalo sing aside. dream press great library system paid soap dance somewhere independent stop single rich if arrange larger basis visit straw took shelf oldest almost bottle.<br>by that leader main acres son bend troops equal dress forgotten hair six unknown wood heat bush positive possibly brother earn being experience hang, fair equipment ruler strong forest four tin shallow appearance fur may green from time throat travel had roll five bet fun sad spread suddenly. corn rope coach opinion equator swam saved finger thing orange further eat constantly behavior lake tree wrapped father stone copy area wood driver activity ! wrote whistle buried reader contrast tape earn soap first vessels rope discussion automobile crop announced running hardly cry tobacco fifth obtain dry loss hurried...
