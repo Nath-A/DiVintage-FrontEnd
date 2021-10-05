@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation de commande</title>
+    <script src="https://kit.fontawesome.com/05be3ed2ff.js" crossorigin="anonymous"></script>
+    <style>
+        body
+        {
+            font-family: Nunito,sans-serif;
+        }
+        header img 
+        {
+            display: block;
+            margin: 15px auto;
+            border-radius: 100%;
+        }
+
+        main
+        {
+            max-width:1200px;
+            margin:0 auto;
+            background-color: #fff;
+            padding:30px;
+            border-radius:50px
+        }
+
+        div.Container 
+        {
+            background-color: orange;
+            border-radius:50px;
+            
+        }
+
+        h1, h2
+        {
+            text-align: center;
+        }
+        h1
+        {
+            
+            color:#fff;
+            margin:0;
+            padding:50px 0;
+        }
+
+        .Disclamer
+        {
+            font-weight: bold;
+            color:orange;
+            text-transform: uppercase;
+            /* font-size: 1.5rem; */
+            line-height: 150%;
+        }
+
+        .Disclamer a
+        {
+            color:orange;
+        }
+        .Process 
+        {
+            margin-bottom:75px;
+        }
+        .Process img
+        {
+            display: block;
+            margin:0 auto;
+        }
+
+        h2
+        {
+            margin-bottom: 35px;
+        }
+
+        h3
+        {
+            font-size : 1rem;
+        }
+
+        .Commande
+        {
+            margin-top: 75px;
+        }
+
+        footer
+        {
+            text-align: justify;
+            max-width:1200px;
+            margin:0 auto;
+            font-size: 0.5rem;
+            line-height: 150%;
+            padding : 25px;
+        }
+
+        a
+        {
+            color:black;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        .Article
+        {
+            display:flex;
+            justify-content: space-between;
+            /* justify-content: space-around; */
+            padding: 0;
+            text-align:center;
+            margin-bottom: 30px;
+        }
+        .NomArticle
+        {
+            text-align: left;
+        }
+        .Article p
+        {
+            width:20%;
+        }
+
+        .Paiement p, .Contact p
+        {
+            margin:0;
+        }
+
+        .Livraison-paiement
+        {
+            display:flex;
+            justify-content: space-between;
+        }
+
+        .Livraison p
+        {
+            margin: 20px 0;
+        }
+        .Paiement div
+        {
+            display:flex;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+            margin:25px 0;
+            
+        }
+
+        .Paiement p:first-child
+        {
+            margin-right:20px;
+        }
+
+        .Paiement div p:last-child
+        {
+            margin-left:20px;
+        }
+        .Contact
+        {
+            margin-top: 25px;
+            font-size: 0.8rem;
+        }
+
+        .Contact div 
+        {
+            display: flex;
+            justify-content: space-between;
+            margin:5px 0;
+            align-items: center;
+        }
+
+        .Contact i 
+        {
+            font-size:1.5rem;
+            margin:5px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <img src="https://placekitten.com/220/200" alt="Logo">
+    </header>
+    <div class="Container">
+        <h1>vous remercie pour votre commande</h1>
+        <main>
+            <div class="process"><img src="images/Process.png" alt="Process Etape 2 Commande validée" width="1000"> </div>
+            <p>Bonjour PRENOM NOM,</p>
+            <p>Bonne nouvelle : votre commande n° <a href="#">xxxxxxx</a> du 27/09/2021 a bien été validée et est maintenant en cours de préparation. Vous pouvez vérifier son statut directement via <a href="#">ce lien</a>.</p>
+            <p>Sauf erreur de notre part, nous n’avons pas reçu le paiement de cette commande.</p>
+            <p>Vous disposez de plusieurs moyens pour réaliser votre paiement : </p>
+            <h3>Virement bancaire : </h3>
+            <p>DiVintage SPRL<br>
+                rue Souverain Pont 18 - 4000 Liège<br>
+                IBAN : BE65 6528 3896 4196<br>
+                BIC: HBKABE22<br>
+                Communication : N° de commande xxxxxxxxx</p>
+            <h3>Paypal : </h3>
+            <p>A l’adresse <a href="mailto:info@divintage.com">info@divintage.com</a> avec le numero de commande en communication</p>
+            <p>Une fois le paiement en notre possession, vous recevrez un email de confirmation lorsque votre commande sera expédiée, avec un lien vous permettant de suivre votre colis.</p>
+            <div class="Disclamer">Notre site est actuellement en développement et risque de présenter des disfonctionnements. N’hésitez pas à nous Contacter par téléphone au <a href="tel:+32485537175">+32(0)485 53 71 75</a> ou par email à l’adresse <a href="mailto:info@divintage.com">info@divintage.com</a> si vous rencontrez la moindre difficulté. Nous sommes aussi joignable sur <a href="https://www.facebook.com/DivintageLiege/">Facebook</a> et <a href="https://www.instagram.com/divintage.official/">Instagram</a>.</div>
+            <div class="Commande">
+                <h2>Détails de la commande</h2>
+                <!-- <table>
+                    <thead>
+                        <tr>
+                            <th>Photo</th>
+                            <th>Article</th>
+                            <th>Taille</th>
+                            <th>Prix</th>
+                            <th>Disponibilité</th>
+                        </tr>
+                            
+                    </thead>
+                </table> -->
+                <!-- <ul>
+                    <li>Photo</li>
+                    <li>Article</li>
+                    <li>Taille</li>
+                    <li>Prix</li>
+                    <li>Disponibilité</li>
+                </ul> -->
+                <div class="Article">
+                    <p><img src="https://placekitten.com/133/200" alt="Photo Article" width="133" height="200"></p>
+                    <p class="NomArticle">Leila Chester Maria<br /><em>Sunlight</em></p>
+                    <p>EU 38</p>
+                    <p>€12,00</p>
+                    <!-- <p>En stock</p> -->
+                </div>
+                <div class="Article">
+                    <p><img src="https://placekitten.com/266/400" alt="Photo Article" width="133" height="200"></p>
+                    <p class="NomArticle">Farmer riding<br /><em>MiaouMiaou</em></p>
+                    <p>EU 38</p>
+                    <p>€120,00</p>
+                    <!-- <p>Sur commande</p> -->
+                </div>
+                <div class="Article">
+                    <p><img src="https://placekitten.com/399/600" alt="Photo Article" width="133" height="200"></p>
+                    <p class="NomArticle">Feature Rose<br /><em>Principal</em></p>
+                    <p>/</p>
+                    <p>€12,00</p>
+                    <!-- <p>En stock</p> -->
+                </div>
+                <hr>
+                <div class="Livraison-paiement">
+                    <div class="Livraison">
+                        <p><strong>Adresse de livraison</strong></p>
+                        <p>Jane Doe<br />
+                            Rue des Chats, 666/8<br />
+                            6666 MiaouCity<br />
+                            Belgique</p>
+                        <p>+32466 12 45 78<br />
+                            janedoe@mail.com</p>
+
+
+                    </div>
+                    <div class="Paiement">
+                        <div class="Sous-total">
+                            <p>Sous-total</p>
+                            <p>€ 235</p>
+                        </div>
+                        <div class="Expédition">
+                            <p>Expédition</p>
+                            <p>€ 7.99 via DPD</p>
+                        </div>
+                        <div class="Moyen-paiement">
+                            <p>Moyen de paiement</p>
+                            <p>Paypal</p>
+                        </div>
+
+                        <div class="Total">
+                            <p>Total</p>
+                            <p>€ XXX,XX</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <hr>
+            <p>Si vous avez la moindre question au sujet de votre commande, n’hésitez pas à répondre directement à cet
+                email.</p>
+
+            <p>À bientôt, </p>
+
+            <p>L’équipe DiVintage</p>
+            <div class="Contact">
+                <div>
+                    <p>Rue de la Grande Ile 8, 1000 Bruxelles</p>
+                    <p><a href="tel:+32485537175">+32(0)485 53 71 75</a></p>
+                </div>
+                <div>
+                    <p><a href="https://divintage.com">https://divintage.com</a></p>
+                    <p><a href="mailto:info@divintage.com">info@divintage.com</a></p>
+                    <p>
+                        <a href="www.facebook.com/DivintageLiege/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/divintage.official/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </p>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            
+        </footer>
+    </div>
+</body>
+</html>
