@@ -1,0 +1,54 @@
+.Process {
+    margin-bottom: 75px;
+}
+
+.Process img {
+    display: block;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 35px;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.Commande {
+    margin-top: 75px;
+}
+
+footer {
+    text-align: justify;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0.5rem;
+    line-height: 150%;
+    padding: 25px;
+}
+
+a {    color: black;    text-decoration: underline;    font-weight: 600;}
+
+.Article {    display: flex;    justify-content: space-between;    /* justify-content: space-around; */    padding: 0;    text-align: center;    margin-bottom: 30px;}
+
+.NomArticle {    text-align: left;}
+.Article p {    width: 20%;}
+
+.Paiement p,.Contact p {    margin: 0;}
+
+.Livraison-paiement {    display: flex;    justify-content: space-between;}
+
+.Livraison p {    margin: 20px 0;}
+
+.Paiement div {    display: flex;    justify-content: space-between;    border-bottom: 1px solid black;    margin: 25px 0;}
+
+.Paiement p:first-child {    margin-right: 20px;}
+
+.Paiement div p:last-child {    margin-left: 20px;}
+
+.Contact {    margin-top: 25px;    font-size: 0.8rem;}
+
+.Contact div {    display: flex;    justify-content: space-between;    margin: 5px 0;    align-items: center;}
+
+.Contact i {    font-size: 1.5rem;    margin: 5px;}
